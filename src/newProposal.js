@@ -39,8 +39,8 @@ export default function Album() {
                             </Typography>
                             <br/>
                             <form className={classes.root} noValidate autoComplete="off">
-                                <TextField id="proposal-title" label="Title" variant="outlined"/>
-                                <TextField id="proposal-title" label="Description" multiline rows={5}
+                                <TextField id="proposal-title" label="Fix the pothole at 6th cross" variant="outlined"/>
+                                <TextField id="proposal-title" label="SJRC Road nalli pothole ide. Fix maadi!" multiline rows={5}
                                            variant="outlined"/>
                                 <FormControl component="fieldset">
                                     <FormLabel component="legend">Concerned department</FormLabel>

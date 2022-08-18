@@ -2,9 +2,10 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import 'antd/dist/antd.css';
 // import reportWebVitals from './reportWebVitals';
 import * as serviceWorker from './serviceWorker';
-import MOI_ID from "rn-moi-id";
+import MOI_ID from "js-moi-id";
 window.moi_id = new MOI_ID();
 ReactDOM.render(
     <React.StrictMode>

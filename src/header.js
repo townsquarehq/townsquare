@@ -7,6 +7,7 @@ import {
 } from "@material-ui/core";
 import React from "react";
 import Login from "./login";
+import { useHistory } from "react-router-dom";
 
 const headersData = [
     {
@@ -41,7 +42,7 @@ const useStyles = makeStyles(() => ({
 
 export default function Header() {
     const { header, logo, menuButton, toolbar } = useStyles();
-
+    const history = useHistory();
     const displayDesktop = () => {
         return (
             <Toolbar className={toolbar}>
@@ -54,7 +55,8 @@ export default function Header() {
     };
 
     const townSquareLogo = (
-        <Typography variant="h6" component="h1" className={logo}>
+
+        <Typography variant="h6" component="h1" className={logo} onClick={() => history.push("/")}>
             TownSquare
         </Typography>
     );
@@ -67,7 +69,7 @@ export default function Header() {
                         key: label,
                         color: "inherit",
                         to: href,
-                       // component: Link,
+                        // component: Link,
                         className: menuButton,
                     }}
                 >
